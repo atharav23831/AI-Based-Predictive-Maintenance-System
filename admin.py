@@ -17,7 +17,7 @@ class LessonAdmin(admin.ModelAdmin):
     list_display = ['title']
     inlines = [QuestionInline]
 
-# Register ALL 7 required models
+# Register all 7 models to ensure they show up in the Admin portal
 admin.site.register(Course)
 admin.site.register(Lesson, LessonAdmin)
 admin.site.register(Instructor)
